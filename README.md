@@ -5,4 +5,16 @@
 У игрока есть 3 жизни, то есть 3 пушки. Когда одна пушка закончилась, то автоматически идет перезаупск игры. Также игрок видит счет, сколько врагов он убил, 
 видит количсетво оставшихся жизнес из трех, а также свой рекорд. То есть, если игрко перезайдет в игру, то он увидит свой наилучший счет.
 
-
+\\\
+def run():
+    pygame.init()
+    screen = pygame.display.set_mode((700, 800))
+    pygame.display.set_caption('Космическое путешествие')
+    fon = (0, 0, 0)
+    gun = Gun(screen)
+    bullets = Group()
+    inos = Group()
+    controls.create_army(screen, inos)
+    stats = Stats()
+    sc - Scores(screen, stats)
+\\\
